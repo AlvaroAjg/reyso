@@ -4,34 +4,19 @@ import HeaderButton from "./HeaderButton.astro"
 console.log('javascript')
 ---
 
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-5 lg:px-6">
-    <div class="mx-auto text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-7xl -tracking-tight font-extrabold text-white">
+<header class="py-4 px-6 mx-auto max-w-7xl flex flex-col items-center lg:flex-row lg:justify-between">
+   
+    <div class="text-center lg:text-left">
+        <a href="/" class="text-5xl font-extrabold text-white hover:text-gray-300 transition duration-200">
             Reyso
-        </h2>
-        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-           Bienvenidos a la pagina oficial de Reyso
-        </p>
+        </a>
+        
     </div>
 
-    <nav class="flex flex-col items-center justify-between w-full text-center
-    md:flex-row">
     
-        <HeaderButton class="text-white"  href="/easycarp">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
-            Easycarp
-        </HeaderButton>
-        
-        <HeaderButton class="text-white" href="">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
-            Torneria
-             </HeaderButton>
-        
-         <HeaderButton class="text-white" href="">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
-
-            Reparaciones y Soldaduras
-            
-        </HeaderButton>
+    <nav class="flex gap-6 mt-4 lg:mt-0">
+        <HeaderButton class="text-white" href="/easycarp">Easycarp</HeaderButton>
+        <HeaderButton class="text-white" href="#">Tornería</HeaderButton>
+        <HeaderButton class="text-white" href="#">Reparaciones y Soldaduras</HeaderButton>
     </nav>
 </header>
