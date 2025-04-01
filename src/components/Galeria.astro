@@ -1,0 +1,28 @@
+---
+const images = [
+  { src: "/images/detalleseasy.jpg", title: "Vista de parte superior", desc: "Se puede observar el mecanismo de engache de brazos" },
+  { src: "/images/manilla.jpg", title: "Resortes", desc: "Utilizamos 4 resortes por lado, esto genera la fuerza necesaria para encarpar y desencarpar" },
+  { src: "/images/manilla2.jpg", title: "Manilla", desc: "Manilla para enrrollar y desenrrollar el encarpe" },
+  { src: "/images/vistaeasycarp.jpg", title: "Vista mas amplia", desc: "Se puede observar el brazo y el quiebre que le damos para que quede 100% cubierto y no recibir daños " },
+  { src: "/images/vistabatea.jpg", title: "Batea", desc: "Como queda nuestro encarpe en batea" },
+  { src: "/images/resortesbatea.jpg", title: "Resortes para bateas", desc: "Para las bateas utilizamos otro tipo de resorte ya que este requiere mas potencia " }
+  
+];
+---
+
+<section class="py-3 bg-grey-500 rounded-xl">
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      {images.map((img) => (
+        <div class="bg-gray-700 rounded-lg shadow-md overflow-hidden">
+          <img src={img.src} alt={img.title} class="w-full h-60 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">{img.title}</h3>
+            <p class="text-gray-600 text-white">{img.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
