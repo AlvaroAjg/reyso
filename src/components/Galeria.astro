@@ -1,28 +1,32 @@
 ---
 const images = [
-  { src: "/images/detalleseasy.jpg", title: "Vista de parte superior", desc: "" },
-  { src: "/images/resortes.jpg", title: "Resortes", desc: "Utilizamos resortes americanos" },
-  { src: "/images/manilla2.jpg", title: "Manibela", desc: "" },
-  { src: "/images/vistaeasycarp.jpg", title: "Vista mas amplia", desc: "" },
-  { src: "/images/vistabatea.jpg", title: "Batea", desc: "" },
-  { src: "/images/resortesbatea.jpg", title: "Resortes para bateas", desc: "Se utiliza resorte tipo espiral montado en rodamientos " }
-  
+  { src: '/images/detalleseasy.jpg', title: 'Vista de parte superior', desc: '' },
+  { src: '/images/resortes.jpg', title: 'Resortes', desc: 'Utilizamos resortes americanos' },
+  { src: '/images/manilla2.jpg', title: 'Manibela', desc: '' },
+  { src: '/images/vistaeasycarp.jpg', title: 'Vista mas amplia', desc: '' },
+  { src: '/images/vistabatea.jpg', title: 'Batea', desc: '' },
+  {
+    src: '/images/resortesbatea.jpg',
+    title: 'Resortes para bateas',
+    desc: 'Se utiliza resorte tipo espiral montado en rodamientos ',
+  },
 ];
 ---
 
 <section class="py-3 bg-grey-500 rounded-xl">
   <div class="max-w-6xl mx-auto px-4">
-    
     <div class="grid md:grid-cols-3 gap-6">
-      {images.map((img) => (
-        <div class="bg-gray-700 rounded-lg shadow-md overflow-hidden">
-          <img src={img.src} alt={img.title} class="w-full h-60 object-cover" />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-white">{img.title}</h3>
-            <p class="text-gray-600 text-white">{img.desc}</p>
+      {
+        images.map((img) => (
+          <div class="bg-gray-700 rounded-lg shadow-md overflow-hidden">
+            <img src={img.src} alt={img.title} class="w-full h-60 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-white">{img.title}</h3>
+              <p class="text-gray-600 text-white">{img.desc}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>

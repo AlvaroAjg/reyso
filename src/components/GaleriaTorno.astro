@@ -1,30 +1,37 @@
 ---
 const images = [
-  { src: "/images/pasador.jpg", title: "Pasador", desc: "", type: "image" },
-  { src: "/images/videotorno.mp4", title: "Torno en acción", desc: "", type: "video" },
-  { src: "/images/pasador2.jpg", title: "Conjunto Pasador, buje y seguro", desc: "", type: "image" },
+  { src: '/images/pasador.jpg', title: 'Pasador', desc: '', type: 'image' },
+  { src: '/images/videotorno.mp4', title: 'Torno en acción', desc: '', type: 'video' },
+  {
+    src: '/images/pasador2.jpg',
+    title: 'Conjunto Pasador, buje y seguro',
+    desc: '',
+    type: 'image',
+  },
 ];
 ---
 
 <section class="py-3 bg-gray-500 rounded-xl">
   <div class="max-w-6xl mx-auto px-4">
     <div class="grid md:grid-cols-3 gap-6">
-      {images.map((media) => (
-        <div class="bg-gray-700 rounded-lg shadow-md overflow-hidden">
-          {media.type === "image" ? (
-            <img src={media.src} alt={media.title} class="w-full h-60 object-cover" />
-          ) : (
-            <video controls class="w-full h-60 object-cover">
-              <source src={media.src} type="video/mp4" />
-              Tu navegador no soporta la reproducción de videos.
-            </video>
-          )}
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-white">{media.title}</h3>
-            <p class="text-gray-300">{media.desc}</p>
+      {
+        images.map((media) => (
+          <div class="bg-gray-700 rounded-lg shadow-md overflow-hidden">
+            {media.type === 'image' ? (
+              <img src={media.src} alt={media.title} class="w-full h-60 object-cover" />
+            ) : (
+              <video controls class="w-full h-60 object-cover">
+                <source src={media.src} type="video/mp4" />
+                Tu navegador no soporta la reproducción de videos.
+              </video>
+            )}
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-white">{media.title}</h3>
+              <p class="text-gray-300">{media.desc}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>

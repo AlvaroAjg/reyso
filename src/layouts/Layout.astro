@@ -1,39 +1,33 @@
 ---
-import "../styles/global.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Reyso</title>
-	</head>
-	<body class="bg-gray-900 min-h-screen pb-32 ">
-		<Header />
-		<main class="max-w-5xl px-4 m-auto">
-			
-			<slot />
-		</main>
-		<Footer />
-		
-		
-	</body>
-	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Reyso</title>
+  </head>
+  <body class="bg-gray-900 min-h-screen pb-32">
+    <Header />
+    <main class="max-w-5xl px-4 m-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-	
-	html {
-		background: rgb(14, 18, 39);
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		color-scheme: dark ligth;
-	}
+  html {
+    background: rgb(14, 18, 39);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color-scheme: dark ligth;
+  }
 </style>
