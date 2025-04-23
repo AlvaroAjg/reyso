@@ -1,22 +1,24 @@
 ---
-import HeaderButton from "./HeaderButton.astro"
+import HeaderButton from './HeaderButton.astro';
 
-console.log('javascript')
+console.log('javascript');
 ---
 
-<header class="py-4 px-6 mx-auto max-w-7xl flex flex-col items-center lg:flex-row lg:justify-between">
-   
-    <div class="text-center lg:text-left">
-        <a href="/" class="text-5xl font-extrabold text-white hover:text-gray-300 transition duration-200">
-            Reyso
-        </a>
-        
-    </div>
+<header
+  class="py-4 px-6 mx-auto max-w-7xl flex flex-col items-center lg:flex-row lg:justify-between"
+>
+  <div class="text-center lg:text-left">
+    <a
+      href="/"
+      class="text-5xl font-extrabold text-white hover:text-gray-300 transition duration-200"
+    >
+      Reyso
+    </a>
+  </div>
 
-    
-    <nav class="flex gap-6 mt-4 lg:mt-0">
-        <HeaderButton class="text-white" href="/easycarp">Easycarp</HeaderButton>
-        <HeaderButton class="text-white" href="/torneria">Tornería</HeaderButton>
-        <HeaderButton class="text-white" href="/repara">Reparaciones y Soldaduras</HeaderButton>
-    </nav>
+  <nav class="flex gap-6 mt-4 lg:mt-0">
+    <HeaderButton class="text-white" href="/easycarp">Easycarp</HeaderButton>
+    <HeaderButton class="text-white" href="/torneria">Tornería</HeaderButton>
+    <HeaderButton class="text-white" href="/repara">Reparaciones y Soldaduras</HeaderButton>
+  </nav>
 </header>

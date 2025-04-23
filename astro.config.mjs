@@ -1,12 +1,12 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   // Asegúrate de que `@astrojs/tailwind` NO esté aquí
   integrations: [],
 
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });
