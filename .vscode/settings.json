@@ -1,14 +1,10 @@
 {
-  // Enable ESLint for all supported files
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "astro"],
 
-  // Format on save using Prettier
   "editor.formatOnSave": true,
 
-  // Default formatter for all files
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // Language-specific settings
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -19,11 +15,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  // Fix all eslint issues on save
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
 
-  // Use eslint.config.js as the ESLint configuration
   "eslint.experimental.useFlatConfig": true
 }
